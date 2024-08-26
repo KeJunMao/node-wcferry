@@ -1,33 +1,33 @@
 {
-    "name": "@wcferry/ws",
-    "version": "0.0.1",
-    "dependencies": {
-        "@swc/helpers": "~0.5.2",
-        "commander": "^11.1.0",
-        "debug": "^4.3.4",
-        "ws": "^8.16.0"
-    },
-    "peerDependencies": {
-        "@wcferry/core": "workspace:^*"
-    },
-    "bin": {
-        "wcfwebsocket": "./src/cmd.js"
-    },
-    "type": "commonjs",
-    "main": "./src/index.js",
-    "typings": "./src/index.d.ts",
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/",
-        "directory": "../../dist/packages/ws"
-    },
-    "repository": {
-        "url": "git+https://github.com/stkevintan/node-wcferry.git",
-        "type": "git"
-    },
-    "author": {
-        "name": "stkevintan"
-    },
-    "devDependencies": {
-        "@types/ws": "^8.5.10"
-    }
+  "name": "@wcferry/ws",
+  "version": "0.0.1",
+  "dependencies": {
+    "@swc/helpers": "~0.5.2",
+    "commander": "^11.1.0",
+    "debug": "^4.3.4",
+    "ws": "^8.16.0"
+  },
+  "peerDependencies": {
+    "@wcferry/core": "workspace:^*"
+  },
+  "bin": {
+    "wcfwebsocket": "./src/cmd.js"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "directory": "../../dist/packages/ws"
+  },
+  "repository": {
+    "url": "git+https://github.com/stkevintan/node-wcferry.git",
+    "type": "git"
+  },
+  "author": {
+    "name": "stkevintan"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.10"
+  }
 }
