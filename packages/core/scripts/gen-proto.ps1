@@ -8,7 +8,7 @@ function New-ProtoDir([string]$p) {
 }
 
 $PROTO_DIR = New-ProtoDir "$PSScriptRoot/../.proto"
-$PROTO_GENERATED = New-ProtoDir "$PSScriptRoot/../src/lib/proto-generated" 
+$PROTO_GENERATED = New-ProtoDir "$PSScriptRoot/../src/lib/proto-generated"
 
 # if powershell 5 or pwsh with platform Win32NT
 if (!$PSVersionTable.Platform -or ($PSVersionTable.Platform -eq "Win32NT")) {
@@ -58,6 +58,8 @@ function Invoke-ProtoGen {
         "$PROTO_DIR/*.proto"
     )
 
+    Write-Host $arguments
+
     $proc = Start-Process $GRPC_TOOLS_NODE_PROTOC -ArgumentList $arguments -WorkingDirectory $PSScriptRoot -NoNewWindow -PassThru
     $proc.WaitForExit()
 }
@@ -72,7 +74,7 @@ function Set-LintIgnore {
 
         # Prepend //@ts-nocheck to the file
         $contents = "/* eslint-disable */ $eol //@ts-nocheck $eol" + $contents
- 
+
         # Write the new contents to the file
         Set-Content -Path $_.FullName -Value $contents
     }

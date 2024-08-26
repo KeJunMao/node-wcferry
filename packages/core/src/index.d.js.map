@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../packages/ws/node_modules/@wcferry/core/src/index.d.ts"],"sourcesContent":["export * from './lib/client';\nexport * from './lib/file-ref';\nexport * from './lib/message';\n//# sourceMappingURL=index.d.ts.map"],"names":[],"mappings":";;;;;uBAAc;uBACA;uBACA;CACd,mCAAmC"}
